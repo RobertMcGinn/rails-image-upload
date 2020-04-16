@@ -34,6 +34,8 @@ gem 'rails-assets-jcrop', source: 'https://rails-assets.org'
 gem 'simple_form'
 gem 'jquery-rails'
 
+gem 'fog-aws'
+
 gem 'pry', '~> 0.12.2'
 
 # Use Capistrano for deployment
