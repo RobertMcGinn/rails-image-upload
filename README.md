@@ -23,3 +23,8 @@ Things you may want to cover:
 
 * ...
 # rails-image-upload
+
+
+How to push changes to github
+
+git push -u imageup master
