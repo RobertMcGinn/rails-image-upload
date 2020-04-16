@@ -8,6 +8,7 @@ class AvatarCrop
   constructor: ->
     width = parseInt($('#cropbox').width())
     height = parseInt($('#cropbox').height())
+    console.log('Constructor triggered')
     $('#cropbox').Jcrop
       aspectRatio: 1
       setSelect: [0, 0, width, height]
@@ -19,6 +20,7 @@ class AvatarCrop
     $('#product_crop_y').val(coords.y)
     $('#product_crop_w').val(coords.w)
     $('#product_crop_h').val(coords.h)
+    console.log("Got here")
     @updatePreview(coords)
 
   updatePreview: (coords) =>
