@@ -2,7 +2,7 @@ require 'carrierwave/storage/fog'
 
 CarrierWave.configure do |config|
   if Rails.env.staging? || Rails.env.production?
-    config.fog_provider = ‘fog/aws’ 
+    config.fog_provider = "fog/aws"
     config.fog_credentials = {
       :provider => ‘AWS’,
       :aws_access_key_id => BUCKETEER_AWS_ACCESS_KEY_ID,
