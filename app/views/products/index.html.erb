@@ -1,0 +1,7 @@
+<h1>Architecture Spike - Image uploading</h1>
+
+<% @products.each do |product| %>
+  <%= link_to product.name, product_path(product) %> 
+<% end %>
+<br><br>
+<%= link_to 'Add a new Product', new_product_path %>

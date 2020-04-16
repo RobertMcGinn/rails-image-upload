@@ -1,0 +1,23 @@
+<h1><%= @product.name %></h1>
+
+<h5><%= @product.description %></h5>
+<br><br>
+
+<hr/>
+
+<%= @product.avatar %>
+<br><br>
+<%= image_tag(@product.avatar.versions[:thumb].to_s) %>
+
+<%= link_to 'edit image', edit_image_products_path(image_product: { id: @product.id ,type: 'avatar'}) %>
+
+<hr/>
+
+<%= @product.image2 %>
+<br><br>
+<%= image_tag(@product.image2.versions[:thumb].to_s) %>
+
+<%= link_to 'edit image', edit_image_products_path(image_product: { id: @product.id ,type: 'image2'}) %>
+
+<br><br><br>
+<%= link_to 'home', root_path %>

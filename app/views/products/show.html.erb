@@ -1,0 +1,38 @@
+<h1><%= @product.name %></h1>
+
+<h5><%= @product.description %></h5>
+<br><br>
+
+<hr/>
+
+<%= @product.avatar %>
+<br><br>
+
+<%= link_to 'edit image', edit_image_products_path(image_product: { id: @product.id ,type: 'avatar'}) %>
+
+<br>
+<%= image_tag(@product.avatar.versions[:tiny].to_s) %>
+<%= image_tag(@product.avatar.versions[:thumb].to_s) %>
+<%= image_tag(@product.avatar.versions[:product_size].to_s) %>
+
+<br><br>
+<%= image_tag(@product.avatar.versions[:large].to_s) %>
+
+<hr/>
+
+<%= @product.image2 %>
+<br><br>
+<%= link_to 'edit image', edit_image_products_path(image_product: { id: @product.id ,type: 'image2'}) %>
+
+<br>
+<%= image_tag(@product.image2.versions[:tiny].to_s) %>
+<%= image_tag(@product.image2.versions[:thumb].to_s) %>
+<%= image_tag(@product.image2.versions[:product_size].to_s) %>
+
+<br><br>
+<%= image_tag(@product.image2.versions[:large].to_s) %>
+
+
+
+<br><br><br>
+<%= link_to 'home', root_path %>
